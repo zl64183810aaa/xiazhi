@@ -1,0 +1,19 @@
+/* pages/profile/profile.wxss */
+.profile{
+  background: #e54847;
+  height: 400rpx;
+  text-align: center;
+  position: relative;
+  width: 100%
+}
+.profile-img{
+  position: absolute;
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius:50% ;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%,60rpx)
+
+}

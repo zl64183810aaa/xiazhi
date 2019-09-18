@@ -1,0 +1,24 @@
+<!--pages/mymovie/movie.wxml-->
+<!-- 喜欢电影的列表 -->
+<view class="movielist">
+  <image></image>
+  <text></text>
+</view>
+<view class="user">
+<!-- 输入框 -->
+<van-cell-group>
+  <van-field
+    value="{{ content }}"
+    placeholder="写下你的感想.."
+    bind:change="onContentChange"
+  />
+</van-cell-group>
+<!-- 上传图片 -->
+<van-button type="primary" size="large" bindtap="upmymovie">上传图片</van-button>
+<!-- 预览区域 -->
+<view class="imagelist">
+ <image  src="{{image}}"></image>
+</view>
+<!-- 提交按钮 -->
+<van-button type="danger" size="large" bindtap="submit">提交</van-button>
+</view>

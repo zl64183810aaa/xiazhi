@@ -1,0 +1,31 @@
+/* pages/home/home.wxss */
+.movie{
+  display: flex;
+  padding: 10px;
+  border-bottom:1px solid #ccc 
+}
+.movie-img{
+  width: 200rpx;
+  height: 300rpx;
+  margin-right:20rpx 
+}
+.movie-info{
+  flex: 1; /*将右侧区域填充满*/
+  font-size: 28rpx;
+  line-height: 1.8  /*行高 原有文字的1.8倍*/
+  }
+ .movie-title{
+   color: #666;
+   font-size: 40rpx;
+   font-weight: bold;
+ } 
+ .movie-score{
+    color: #faaf00;
+ }
+ .movie-btn{
+   height: 60rpx;
+   background: #d81e06;
+   color: #fff;
+   font-size:26rpx;
+   margin-top: 12rpx;
+ }

@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<!-- 电影区域 -->
+<view wx:for="{{list}}" wx:key="index" class="movie">
+<image src="{{item.images.small}}" class="movie-img"></image>
+<view class="movie-info">
+ <view class="movie-title">{{item.title}}</view>
+ <view class="movie-score">{{item.rating.average}}分</view>
+ <view wx:for="{{item.casts}}" wx:key="index">主演
+ <text>{{item.name}}</text>
+ </view>
+ <view>年份{{item.year}}</view>
+<button class="movie-btn" bindtap="jumpCommend" data-id="{{item.id}}">详情</button>
+</view>
+</view>
+
+
+
+
